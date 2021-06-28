@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url("https://wallpapercave.com/wp/wc1813154.jpg");
+   
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+.toolbar span{
+    color: rgb(247, 247, 247);
+    margin-left: 45px;
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+    margin: auto;
+}
+.container::before{
+    content: '';
+    background: black;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.45;
+    height: 85vh;
+}
+.toolbar{
+display: flex;
+justify-content: center;
+    
+background-color: rgba(49, 49, 49, 0.178);
+position: relative;
+}
+.toolbar button{
+    border: 1.5px solid white;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.192);
+    color: white;
+}
+.tags a{
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+    
+}
+.toolbar a{
+    background-color: rgba(0, 0, 0, 0.233);
+    border: 1.5px solid white;
+    color: white;
+}
+.toolbar a:last-child{
+    margin-left: 2px;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+   
+}
+.search-box .search-bar{
+    width: 255px;
+    height: 30px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 3px;
+}
+.search-box .search-btn{
+    height: 29px;
+    margin-left: 2px;
+    border: 2px solid white;
+    background-color: rgba(28, 27, 31, 0.37);
+    color: white;
+    border-radius: 2px;
+}
+.intro .d-f{
+    align-self: center;
+    margin-bottom: 50px;
+    left: 15px;
+    font-size: 3rem;
+    color: aliceblue;
+    font-family: 'Tangerine', cursive;
+    font-weight: 500;
+}
+.intro .d-f2{
+    align-self: center;
+    font-family: 'Tangerine', cursive;
+    font-weight: 800;
+    font-size: 2.6rem;
+    left: 38px;
+    margin-bottom: 2px;
+}
+.intro{
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    top: 160px;
+    margin-bottom: 0;
+}
+.intro .intro-txt{
+    align-self: center;
+    color: white;
+    font-family: 'Tangerine', cursive;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+.btn-blw-info{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+.btn-blw-info a:first-child{
+    background-color: rgba(5, 5, 5, 0.308);
+    color: white;
+    border: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+.btn-blw-info a:last-child{
+    background-color: rgba(3, 3, 3, 0.295);
+    border: 2px solid white;
+    color: white;
+    margin: 0 65px;
+   
+}
+.btn-blw-info .act-btn{
+    position: relative;
+    height: 38px;
+    width: 108px;
+    font-size: 12px;
+    margin-left: 35px;
+    
+    left: 35px;
+}
+.menu-tag{
+    display: flex;
+    text-decoration: underline;
+    background-color: antiquewhite;
+    justify-content: center;
+    
+}
+.menu-tag > h2{
+    margin-top: 13px;
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+}
+.menu-select{
+    padding: 1em;
+    display: grid;
+    grid-gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.menu-grid{
+    border: 2px solid black;
+    border-radius: .3em;
+    padding: 2em;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.menu-select .menu-grid p{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.226);
+    font-family: 'Tangerine', cursive;
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+    
+}
+.menu-select > div{
+  height: 200px;  
+}
+.menu-select > div:first-child{
+    background-image: url("https://munchyesta.com/wp-content/uploads/2020/07/vegetarian-pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-select > div:nth-child(2){
+    background-image: url("http://culinarychampions.com/wp-content/uploads/IMG_5078.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-select > div:nth-child(3){
+    background-image: url("https://tastyk-4ec7.kxcdn.com/wp-content/uploads/2016/07/Healthy-Vegan-Pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-select > div:last-child{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYWwKkBfCdJxToQG7YOUx3wPoD3ZDdpogyBA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    margin-top: 0;
+}
+.specials{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 18px;
+    padding: 1em;
+}
+.specials > div{
+    height: 200px;
+}
+.specials .specials-grid{
+    border: 2px solid black;
+    border-radius: .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100vw;
+}
+@media only screen and (max-width: 400px){
+    .toolbar{
+        height: 51px;
+        margin-bottom: 0;
+    }
+    .toolbar span{
+        margin-bottom: 0;
+    }
+    .toolbar a{
+        display: none;
+        
+    }
+    .toolbar button{
+        border: 1.5px solid white;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.192);
+        color: white;
+    }
+    .search-box .search-bar{
+        width: 123px;
+        height: 28px;
+    }
+    .search-box .search-btn{
+      margin-left: 0.5px;
+        height: 26px;
+        
+    }
+    .d-f{
+        font-size: 3rem;
+
+    }
+    .intro{
+        top: 115px;
+    }
+    .intro .intro-txt{
+        width: 270px;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .footer{
+        background: black;
+        height: 12vh;
+    }
+    .search-box{
+        margin-left: 10px
+    }
+    .d-f{
+        font-size: 7rem;
+        color: aliceblue;
+    }
+    .intro .intro-txt{
+        width: 70vw;
+    }
+    .btn-blw-info{
+        top: 220px;
+    }
+}
