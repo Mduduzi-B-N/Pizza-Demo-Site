@@ -111,7 +111,9 @@ position: relative;
     color: white;
     font-family: 'Tangerine', cursive;
     margin-bottom: 0;
-    font-size: 1.3rem;
+    font-size: 1.45rem;
+    max-width: 70ch;
+
 }
 .btn-blw-info{
     display: flex;
@@ -163,7 +165,7 @@ position: relative;
 .menu-grid{
     border: 2px solid black;
     border-radius: .3em;
-    padding: 2em;
+   
      display: flex;
    justify-content: center;
    align-items: center;
@@ -171,13 +173,16 @@ position: relative;
 .menu-select .menu-grid p{
     display: flex;
     align-items: center;
-    height: 50%;
+   justify-content: center;
     background-color: rgba(0, 0, 0, 0.226);
     font-family: 'Tangerine', cursive;
     color: white;
     font-size: 3rem;
     text-decoration: underline;
-    
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    border-radius: .1em;
 }
 .menu-select > div{
   height: 200px;  
@@ -237,15 +242,21 @@ p{
     padding: 1rem 1rem 0 1rem;
     color: white;
 }
+.footer-container .footer a{
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
 .footer h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: underline;
 }
 .footer-container .footer-bottom{
     display: flex;
     justify-content: center;
     height: 5vh;
-    border: 1px solid black;
+    
     color: white;
 
 }
@@ -303,6 +314,6 @@ p{
         width: 70vw;
     }
     .btn-blw-info{
-        top: 220px;
+        top: 200px;
     }
 }
